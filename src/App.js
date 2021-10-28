@@ -1,14 +1,22 @@
 import './App.css';
-import { Button, Col, Row } from 'react-bootstrap';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <Row className="mx-0">
-        <Button as={Col} variant="primary">Button #1</Button>
-        <Button as={Col} variant="secondary" className="mx-2">Button #2</Button>
-        <Button as={Col} variant="success">Button #3</Button>
-      </Row>
+      <Router>
+        <Header></Header>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
