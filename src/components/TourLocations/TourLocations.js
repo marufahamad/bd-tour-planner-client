@@ -7,7 +7,7 @@ const TourLocations = () => {
     const [locations, setLocations] = useState([]);
 
     useEffect(() => {
-        fetch('/locations.json')
+        fetch('http://localhost:5000/tours')
             .then(res => res.json())
             .then(data => setLocations(data))
     }, []);
@@ -17,7 +17,7 @@ const TourLocations = () => {
             <Row xs={1} md={2} lg={3} className="g-4">
                 {
                     locations.map(location => <TourLocation
-                        key={location.name}
+                        key={location._id}
                         location={location}
                     ></TourLocation>)
                 }

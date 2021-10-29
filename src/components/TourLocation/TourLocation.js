@@ -1,9 +1,10 @@
 import React from 'react';
 import { Card, Col, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const TourLocation = ({ location }) => {
-    const { name, img, minPerson, perPersonCost, homeDescription } = location
-    console.log(location)
+    const { name, img, minPerson, perPersonCost, homeDescription, duration, _id } = location
+
     return (
         <Col>
             <Card>
@@ -17,11 +18,11 @@ const TourLocation = ({ location }) => {
                 <ListGroup className="list-group-flush">
                     <ListGroupItem>Minimum Person for Tour: {minPerson}</ListGroupItem>
                     <ListGroupItem>Tour Cost for One Person: BDT {perPersonCost}</ListGroupItem>
-                    <ListGroupItem>Vestibulum at eros</ListGroupItem>
+                    <ListGroupItem>Duration: {duration}</ListGroupItem>
                 </ListGroup>
                 <Card.Body>
-                    <Card.Link href="#">Card Link</Card.Link>
-                    <Card.Link href="#">Another Link</Card.Link>
+                    <Card.Link as={Link} to={`/location/${_id}`}><button className="btn btn-primary">Book Now</button></Card.Link>
+
                 </Card.Body>
             </Card>
         </Col>
