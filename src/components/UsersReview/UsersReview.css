@@ -1,0 +1,23 @@
+.review-row{
+    min-height: 250px;
+    width: 95vw;
+}
+
+.review-massage{
+    background-color: rgb(236, 235, 218);
+    width: 80vw;
+    height: 200px;
+    border: 1px dotted black;
+    overflow: scroll;
+}
+
+.review-input{
+    width: 98%;
+    margin-top: 10px;
+}
+
+.review-area{
+    width: 98%;
+    height: 100px;
+    margin-top: 10px;
+}

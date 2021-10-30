@@ -1,13 +1,19 @@
+
+
 .footer-items {
     list-style: none;
     margin: 10px;
     font-size: 18px;
     font-weight: 600;
-    color: rgb(200, 200, 200);
+    color: rgb(300, 300, 200);
     cursor: pointer;
     padding-top: 10px;
     text-decoration: none;
   }
   .footer-items:hover {
     color: rgba(67, 206, 199, 0.5);
+  }
+
+  .footer{
+    width: 95vw;
   }

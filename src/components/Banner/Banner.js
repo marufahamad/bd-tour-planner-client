@@ -6,42 +6,41 @@ const Banner = () => {
     return (
 
         <div className="mt-2">
-            <h2>Aneesa Tour Planner</h2>
-            <Carousel fade className="carousel w-75 mx-auto">
+            <Carousel fade className="carousel mx-auto">
                 <Carousel.Item >
 
                     <img
                         className="d-block w-100"
-                        src="https://image.freepik.com/free-vector/hand-drawn-travel-youtube-thumbnail_23-2148997478.jpg"
+                        src="https://i.ibb.co/Mp3KY3Z/Sun-is-rising-above-lush-jungle.jpg"
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>Aneesa Tour Planner</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h2 className="text-warning">BD Tour Planner</h2>
+                        <h4 className="text-success">The world is a book and those who do not travel read only one page</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://image.freepik.com/free-vector/hand-drawn-travel-youtube-thumbnail_23-2148997478.jpg"
+                        src="https://i.ibb.co/hVgYLgx/Sunrise-in-beautiful-park.jpg"
                         alt="Second slide"
                     />
 
                     <Carousel.Caption>
-                        <h3>Aneesa Tour Planner</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h2 className="text-warning">BD Tour Planner</h2>
+                        <h6 className="text-light">The real voyage of discovery consists not in seeking new landscapes, but in having new eyes</h6>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="https://image.freepik.com/free-vector/hand-drawn-travel-youtube-thumbnail_23-2148997478.jpg"
+                        src="https://i.ibb.co/Y84qk6B/c-3.jpg"
                         alt="Third slide"
                     />
 
                     <Carousel.Caption>
-                        <h3>Aneesa Tour Planner</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h2 className="text-warning">BD Tour Planner</h2>
+                        <h4 className="text-danger">Life is either a daring adventure or nothing at all</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

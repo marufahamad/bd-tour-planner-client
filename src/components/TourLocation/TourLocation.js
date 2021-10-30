@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
+import { Card, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const TourLocation = ({ location }) => {

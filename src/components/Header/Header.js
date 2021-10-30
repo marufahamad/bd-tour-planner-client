@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Container, Nav, Navbar, } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import './Header.css'
 
 const Header = () => {
     const { user, logOut } = useAuth();
@@ -10,16 +11,16 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
                 <Container>
-                    <Navbar.Brand>BD Tour Planner</Navbar.Brand>
+                    <Navbar.Brand className="text-warning">BD Tour Planner</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                            <Nav.Link className="nav-link" as={Link} to="/home">Home</Nav.Link>
                             {
                                 user?.email ? <Nav>
-                                    <Nav.Link as={Link} to="/myTours">My Tours</Nav.Link>
-                                    <Nav.Link as={Link} to="/allTours">All Tours</Nav.Link>
-                                    <Nav.Link as={Link} to="/addLocation">Add New Location</Nav.Link>
+                                    <Nav.Link className="nav-link" as={Link} to="/myTours">My Tours</Nav.Link>
+                                    <Nav.Link className="nav-link" as={Link} to="/allTours">All Tours</Nav.Link>
+                                    <Nav.Link className="nav-link" as={Link} to="/addLocation">Add New Location</Nav.Link>
                                 </Nav> : []
                             }
                         </Nav>
