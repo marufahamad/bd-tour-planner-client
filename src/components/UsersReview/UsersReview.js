@@ -13,7 +13,7 @@ const UsersReview = () => {
 
     // getting information from review API
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://fathomless-coast-49786.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setMassages(data))
     }, [massages])
@@ -22,7 +22,7 @@ const UsersReview = () => {
     // uploading review massage to API
     const onSubmit = data => {
         // console.log(data);
-        axios.post('http://localhost:5000/reviews', data)
+        axios.post('https://fathomless-coast-49786.herokuapp.com/reviews', data)
             .then(res => {
                 if (res.data.insertedId) {
                     // console.log(res.data)

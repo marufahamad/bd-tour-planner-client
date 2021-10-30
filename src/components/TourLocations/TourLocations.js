@@ -7,7 +7,7 @@ const TourLocations = () => {
     const [locations, setLocations] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/tours')
+        fetch('https://fathomless-coast-49786.herokuapp.com/tours')
             .then(res => res.json())
             .then(data => setLocations(data))
     }, []);

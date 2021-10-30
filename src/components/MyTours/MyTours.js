@@ -9,7 +9,7 @@ const MyTours = () => {
     console.log(user.email)
 
     useEffect(() => {
-        fetch('http://localhost:5000/bookings')
+        fetch('https://fathomless-coast-49786.herokuapp.com/bookings')
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -22,7 +22,7 @@ const MyTours = () => {
 
         const response = window.confirm('Are you sure to Delete');
         if (response) {
-            const url = `http://localhost:5000/bookings/${id}`;
+            const url = `https://fathomless-coast-49786.herokuapp.com/bookings/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

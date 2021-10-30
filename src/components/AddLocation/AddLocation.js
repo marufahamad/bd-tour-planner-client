@@ -11,7 +11,7 @@ const AddLocation = () => {
     const onSubmit = data => {
 
         if (user.email === "maruf.ahamad@gmail.com") {
-            axios.post('http://localhost:5000/tours', data)
+            axios.post('https://fathomless-coast-49786.herokuapp.com/tours', data)
                 .then(res => {
                     if (res.data.insertedId) {
                         // console.log(res.data)

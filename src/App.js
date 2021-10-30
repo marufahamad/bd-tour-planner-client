@@ -27,15 +27,15 @@ function App() {
             <PrivateRoute path="/location/:locationId">
               <BookNow></BookNow>
             </PrivateRoute>
-            <Route path="/myTours">
+            <PrivateRoute path="/myTours">
               <MyTours></MyTours>
-            </Route>
-            <Route path="/allTours">
+            </PrivateRoute>
+            <PrivateRoute path="/allTours">
               <AllTours></AllTours>
-            </Route>
-            <Route path="/addLocation">
+            </PrivateRoute>
+            <PrivateRoute path="/addLocation">
               <AddLocation></AddLocation>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>

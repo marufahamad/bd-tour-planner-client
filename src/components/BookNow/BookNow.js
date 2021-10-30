@@ -17,7 +17,7 @@ const BookNow = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/tours/${locationId}`)
+        fetch(`https://fathomless-coast-49786.herokuapp.com/tours/${locationId}`)
             .then(res => res.json())
             .then(data => setLocation(data))
     }, []);
@@ -30,7 +30,7 @@ const BookNow = () => {
         data.location = { selectedLocation }
         data.status = "pending"
         console.log(data);
-        axios.post('http://localhost:5000/bookings', data)
+        axios.post('https://fathomless-coast-49786.herokuapp.com/bookings', data)
             .then(res => {
                 if (res.data.insertedId) {
                     console.log(res.data)

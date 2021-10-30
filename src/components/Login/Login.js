@@ -24,8 +24,8 @@ const Login = () => {
     }
 
     return (
-        <div>
-            <h2>Please Sign IN</h2>
+        <div className=" body-height">
+            <h2 className="my-5">Please Sign In with <i className="fab fa-google"></i>oogle</h2>
 
             <Button onClick={handleGoogleLogin} variant="warning">Google Sign In</Button>
             <h5>{error}</h5>
