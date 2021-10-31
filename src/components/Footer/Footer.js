@@ -25,8 +25,6 @@ const Footer = () => {
                                 <p className="mx-5">Travel is the only thing you buy that makes you richer</p>
                                 <Nav.Link className="nav-link" as={Link} to="/home"><i className="fas fa-home"></i> Home</Nav.Link>
                                 <Nav.Link as={Link} to="/login">Login <i className="fas fa-sign-in-alt"></i></Nav.Link>
-
-                                <a className="btn" href="https://bit.ly/3m9avif" target="_blank">Subscribe Now</a>
                             </div>
                         </div>
 
