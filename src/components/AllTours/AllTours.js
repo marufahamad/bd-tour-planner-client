@@ -40,26 +40,30 @@ const AllTours = () => {
     }
 
     const handleUpdate = id => {
-        const bookingUpdating = bookings.find(booking => booking._id === id)
-        // const updatedStatus = "approved";
-        // bookingUpdating.status = updatedStatus;
-        setBooking(bookingUpdating)
-        const url = `https://fathomless-coast-49786.herokuapp.com/bookings/${id}`;
-        fetch(url, {
-            method: 'PUT',
-            headers: {
-                'content-type': 'application/json'
-            },
-            body: JSON.stringify(booking)
-        })
-            .then(res => res.json())
-            .then(data => {
-                if (data.modifiedCount > 0) {
-                    alert('Updated Successfully');
-                    setBooking({})
-                }
+        if (user.email === 'maruf.ahamad@gmail.com') {
+            const bookingUpdating = bookings.find(booking => booking._id === id)
+            // const updatedStatus = "approved";
+            // bookingUpdating.status = updatedStatus;
+            setBooking(bookingUpdating)
+            const url = `https://fathomless-coast-49786.herokuapp.com/bookings/${id}`;
+            fetch(url, {
+                method: 'PUT',
+                headers: {
+                    'content-type': 'application/json'
+                },
+                body: JSON.stringify(booking)
             })
-
+                .then(res => res.json())
+                .then(data => {
+                    if (data.modifiedCount > 0) {
+                        alert('Updated Successfully');
+                        setBooking({})
+                    }
+                })
+        }
+        else {
+            alert('You do not have permission to Approve. Only authorize person can Approve')
+        }
 
     }
 

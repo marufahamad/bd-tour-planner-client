@@ -10,6 +10,7 @@ import MyTours from './components/MyTours/MyTours';
 import AllTours from './components/AllTours/AllTours';
 import AddLocation from './components/AddLocation/AddLocation';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
             </PrivateRoute>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>
           <Footer></Footer>

@@ -6,13 +6,13 @@ import './myTours.css'
 const MyTours = () => {
     const [bookings, setBookings] = useState([]);
     const { user, isLoading } = useAuth();
-    console.log(user.email)
+    // console.log(user.email)
 
     useEffect(() => {
         fetch('https://fathomless-coast-49786.herokuapp.com/bookings')
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                // console.log(data)
                 const myBookings = data.filter(booking => booking.email === user.email);
                 setBookings(myBookings);
             })
