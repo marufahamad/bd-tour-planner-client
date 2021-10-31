@@ -9,7 +9,7 @@ const showImg = url => {
 const PreviousTours = () => {
     return (
         <div className="w-75 mx-auto">
-            <h2>OUR PREVIOUS TOUR GALLERY</h2>
+            <h2 className="text-primary "><strong>OUR PREVIOUS TOUR GALLERY</strong></h2>
             <Row>
                 <Col sm={6} className="p-0">
                     <img onClick={() => showImg()} className="w-100" src="https://i.ibb.co/mXqV3mr/8x16.jpg" alt="" />

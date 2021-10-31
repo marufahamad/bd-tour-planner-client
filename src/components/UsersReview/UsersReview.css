@@ -1,12 +1,18 @@
 .review-row{
     min-height: 250px;
     width: 90vw;
+    background-image: url('https://image.freepik.com/free-photo/blue-brushstrokes-background_125540-809.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .review-massage{
-    background-color: rgb(236, 235, 218);
+    background-image: url('https://image.freepik.com/free-photo/blue-brushstrokes-background_125540-809.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     /* width: 80%; */
-    height: 200px;
+    height: 250px;
     border: 1px dotted black;
     overflow: scroll;
 }
@@ -18,6 +24,6 @@
 
 .review-area{
     width: 98%;
-    height: 100px;
+    height: 150px;
     margin-top: 10px;
 }

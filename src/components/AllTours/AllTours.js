@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Col, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth';
+import './AllTours.css'
 
 const AllTours = () => {
     const [bookings, setBookings] = useState([]);
@@ -69,21 +70,21 @@ const AllTours = () => {
 
 
     return (
-        <div className=" body-height">
-            <h2>All Users Tours</h2>
+        <div className=" body-height w-75 mx-auto">
+            <h2>ALL TOURS</h2>
             <Row xs={1} md={2} lg={3} className="g-4">
                 {
                     bookings.map(booking => <div key={booking._id}>
                         <Col>
-                            <Card>
+                            <Card className="shadow card-hover">
                                 <Card.Body>
                                     <Card.Title>{booking.location.selectedLocation}</Card.Title>
                                     <Card.Text>
                                         Booked By: {booking.name}
                                     </Card.Text>
                                 </Card.Body>
-                                <ListGroup className="list-group-flush">
-                                    <ListGroupItem>Email ID: {booking.email}</ListGroupItem>
+                                <ListGroup className="list-group-flush ">
+                                    <ListGroupItem >Email ID: {booking.email}</ListGroupItem>
                                     <ListGroupItem>Address: {booking.address} </ListGroupItem>
                                     <ListGroupItem>Mobile: {booking.mobile}</ListGroupItem>
                                     <ListGroupItem>Status: {booking.status}</ListGroupItem>
@@ -97,8 +98,8 @@ const AllTours = () => {
                         </Col>
                     </div>)
                 }
-            </Row>
-        </div>
+            </Row >
+        </div >
     );
 };
 

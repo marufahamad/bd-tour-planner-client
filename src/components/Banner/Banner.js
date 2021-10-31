@@ -15,7 +15,7 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h2 className="text-warning">BD Tour Planner</h2>
+                        <h2 className="text-warning"><strong>BD Tour Planner</strong></h2>
                         <h4 className="text-success">The world is a book and those who do not travel read only one page</h4>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -27,7 +27,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h2 className="text-warning">BD Tour Planner</h2>
+                        <h2 className="text-warning"><strong>BD Tour Planner</strong></h2>
                         <h6 className="text-light">The real voyage of discovery consists not in seeking new landscapes, but in having new eyes</h6>
                     </Carousel.Caption>
                 </Carousel.Item>
@@ -39,7 +39,7 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h2 className="text-warning">BD Tour Planner</h2>
+                        <h2 className="text-warning"><strong>BD Tour Planner</strong></h2>
                         <h4 className="text-danger">Life is either a daring adventure or nothing at all</h4>
                     </Carousel.Caption>
                 </Carousel.Item>

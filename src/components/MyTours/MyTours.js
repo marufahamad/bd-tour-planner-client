@@ -49,7 +49,7 @@ const MyTours = () => {
                     bookings.map(booking => <div className="" key={booking._id}>
 
                         <Col>
-                            <Card>
+                            <Card className="shadow card-hover">
                                 <Card.Body>
                                     <Card.Title>{booking?.location?.selectedLocation}</Card.Title>
                                     <Card.Text>

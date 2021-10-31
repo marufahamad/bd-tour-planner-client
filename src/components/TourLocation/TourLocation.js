@@ -7,7 +7,7 @@ const TourLocation = ({ location }) => {
 
     return (
         <Col>
-            <Card>
+            <Card className="shadow card-hover">
                 <Card.Img variant="top" src={img} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>

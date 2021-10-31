@@ -22,22 +22,26 @@ const UsersReview = () => {
     // uploading review massage to API
     const onSubmit = data => {
         // console.log(data);
-        axios.post('https://fathomless-coast-49786.herokuapp.com/reviews', data)
-            .then(res => {
-                if (res.data.insertedId) {
-                    // console.log(res.data)
-                    alert("Review added Successfully");
-                    reset();
-                }
-            })
+        if (user.email) {
+            axios.post('https://fathomless-coast-49786.herokuapp.com/reviews', data)
+                .then(res => {
+                    if (res.data.insertedId) {
+                        // console.log(res.data)
+                        alert("Review added Successfully");
+                        reset();
+                    }
+                })
+        }
+        else {
+            alert("Please login before submit review");
+        }
 
     }
 
     return (
-        <div className=" my-2  mx-auto">
-
-            <h2>USERS REVIEW</h2>
-            <Row className="review-row mx-auto">
+        <div className=" my-2 mb-5  mx-auto">
+            <h2 className="text-primary "><strong>USERS REVIEW</strong></h2>
+            <Row className="review-row mx-auto border p-4">
                 <Col xs={12} md={7} className="review-massage text-start my-auto">
                     {
                         massages.map(massage => <div key={massage._id}>

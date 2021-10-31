@@ -11,7 +11,7 @@ const Header = () => {
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
                 <Container>
-                    <Navbar.Brand className="text-warning">BD Tour Planner</Navbar.Brand>
+                    <Navbar.Brand className="text-warning"><strong>BD Tour Planner</strong></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">

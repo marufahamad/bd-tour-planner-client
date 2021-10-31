@@ -13,7 +13,8 @@ const TourLocations = () => {
     }, []);
     return (
         <div className="mt-3 tour-locations mx-auto">
-            <h2>Tour Locations</h2>
+            <h2></h2>
+            <h2 className="text-primary "><strong>TOUR LOCATIONS</strong></h2>
             <Row xs={1} md={2} lg={3} className="g-4">
                 {
                     locations.map(location => <TourLocation

@@ -1,0 +1,6 @@
+.card-hover:hover{
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%);
+    color: wheat;
+}
